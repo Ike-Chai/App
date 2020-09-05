@@ -63,6 +63,15 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  String _getMyText() {
+    if (_counter > 0) {
+      return 'Ike has delayed\n' +
+             'for ${_counter * 60} minutes.';
+    } else {
+      return 'Ike is up to date.';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -95,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // center the children vertically; the main axis here is the vertical
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           // Chaidhat: widget catalogue - https://flutter.dev/docs/development/ui/widgets
           children: <Widget>[
             Image(
@@ -105,7 +114,8 @@ class _MyHomePageState extends State<MyHomePage> {
               'Please push the blue button on the bottom right.',
             ),
             Text(
-              'Ike has delayed for ${_counter * 60} minutes.',
+              _getMyText(),
+              textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.headline4,
             ),
             Text(
@@ -118,10 +128,12 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton.extended(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        label: Text('Next day'),
+        icon: Icon(Icons.add),
+        backgroundColor: Colors.pink,
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
