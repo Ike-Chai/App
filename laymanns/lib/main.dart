@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'CMON IKE STOP PROCRASTINATING'),
     );
   }
 }
@@ -99,13 +99,13 @@ class _MyHomePageState extends State<MyHomePage> {
           // Chaidhat: widget catalogue - https://flutter.dev/docs/development/ui/widgets
           children: <Widget>[
             Image(
-              image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+              image: NetworkImage('https://github.com/Ike-Chai/Laymanns/blob/master/hosting/image-1.png?raw=true'),
             ),
             Text(
-              'You have pushed the button this many times:',
+              'Please push the blue button on the bottom right.',
             ),
             Text(
-              '${_counter * 5}',
+              'Ike has delayed for ${_counter * 60} minutes.',
               style: Theme.of(context).textTheme.headline4,
             ),
             Text(
@@ -114,6 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
               textAlign: TextAlign.left,
               style: TextStyle(fontWeight: FontWeight.w200),
             ),
+
           ],
         ),
       ),
