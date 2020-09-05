@@ -1,6 +1,6 @@
 # laymanns
 
-Ike Sintavanarong and Chaidhat Chaimongkol
+Ike Sintavanarong & Chaidhat Chaimongkol
 
 ## Getting Started
 
