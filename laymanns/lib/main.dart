@@ -96,13 +96,23 @@ class _MyHomePageState extends State<MyHomePage> {
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
+          // Chaidhat: widget catalogue - https://flutter.dev/docs/development/ui/widgets
           children: <Widget>[
+            Image(
+              image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+            ),
             Text(
               'You have pushed the button this many times:',
             ),
             Text(
-              '$_counter',
+              '${_counter * 5}',
               style: Theme.of(context).textTheme.headline4,
+            ),
+            Text(
+              'Chai.hours - Ike.hours == 2.5 // statement is true\n' +
+              'Ike.pickUpPace(SpeedEnum.URGENTLY);',
+              textAlign: TextAlign.left,
+              style: TextStyle(fontWeight: FontWeight.w200),
             ),
           ],
         ),
