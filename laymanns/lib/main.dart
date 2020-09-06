@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
 
 void main() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  return runApp(CupertinoStoreApp());
-=======
-=======
->>>>>>> parent of e58322d... test Cupertino app
   runApp(MyApp());
 }
 
@@ -33,11 +26,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-<<<<<<< HEAD
-      home: MyHomePage(title: 'CMON IKE STOP PROCRASTINATING'),
-=======
       home: MyHomePage(title: 'Laymanns'),
->>>>>>> parent of e58322d... test Cupertino app
     );
   }
 }
@@ -69,31 +58,18 @@ class _MyHomePageState extends State<MyHomePage> {
       // changed in this State, which causes it to rerun the build method below
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
-<<<<<<< HEAD
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-=======
       _counter++;
 
     });
 
->>>>>>> parent of e58322d... test Cupertino app
   }
 
   String _getMyText() {
     if (_counter > 0) {
-<<<<<<< HEAD
-      return 'Ike has delayed\n' +
-             'for ${_counter * 60} minutes.';
-    } else {
-      return 'Ike is up to date.';
-=======
       return 'Ike doing 4 HL instead of appdev\n' +
-             'for ${_counter * 60} minutes.';
+          'for ${_counter * 60} minutes.';
     } else {
       return '';
->>>>>>> parent of e58322d... test Cupertino app
     }
   }
 
@@ -144,14 +120,9 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headline4,
             ),
             Text(
-<<<<<<< HEAD
-              'Chai.hours - Ike.hours == 2.5 // statement is true\n' +
-              'Ike.pickUpPace(SpeedEnum.URGENTLY);',
-=======
               'Chai.hours - Ike.hours = 2.5 \n' +
-              'Ike.pickUpPace();\n' +
-              '// system exception: class type \'ike\' is taking 4HLs',
->>>>>>> parent of e58322d... test Cupertino app
+                  'Ike.pickUpPace();\n' +
+                  '// system exception: class type \'ike\' is taking 4HLs',
               textAlign: TextAlign.left,
               style: TextStyle(fontWeight: FontWeight.w200),
             ),
@@ -166,16 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
         icon: Icon(Icons.add),
         backgroundColor: Colors.pink,
       ), // This trailing comma makes auto-formatting nicer for build methods.
-<<<<<<< HEAD
-    );
-  }
->>>>>>> parent of f8555a2... edit main.dart
-=======
 
     );
   }
->>>>>>> parent of e58322d... test Cupertino app
-=======
-  return runApp(CupertinoStoreApp());
->>>>>>> parent of beb312a... revert
 }
