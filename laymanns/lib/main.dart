@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   return runApp(CupertinoStoreApp());
 =======
 =======
@@ -174,4 +175,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 >>>>>>> parent of e58322d... test Cupertino app
+=======
+  return runApp(CupertinoStoreApp());
+>>>>>>> parent of beb312a... revert
 }
